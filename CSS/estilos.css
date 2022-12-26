@@ -14,21 +14,22 @@ header i {
   background-position: center;
   background-size: cover;
   padding: 100px; }
-
-.main-banner h1 {
-  font-weight: 700 !important; }
+  .main-banner h1 {
+    font-weight: 700 !important; }
 
 h2 {
   font-weight: 700 !important;
   font-size: 1.6rem !important;
   letter-spacing: .1em; }
 
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
 footer .rrss {
   text-align: right; }
-
-footer .rrss i {
-  font-size: 18px;
-  margin: 5px; }
+  footer .rrss i {
+    font-size: 18px;
+    margin: 5px; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #dc3545 !important;
@@ -52,10 +53,9 @@ i {
 
 .card {
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); }
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
 
 @media (max-width: 575.98px) {
   .main-banner {
@@ -69,6 +69,3 @@ i {
     font-size: 15px; }
   .btn {
     font-size: 12px !important; } }
-
-.btn:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
