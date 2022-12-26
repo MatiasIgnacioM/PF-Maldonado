@@ -1,0 +1,26 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000r\u0000e\u0000E\u0000n\u0000t\u0000r\u0000e\u0000g\u0000a\u00003\u0000-\u0000M\u0000a\u0000l\u0000d\u0000o\u0000n\u0000a\u0000d\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasIgnacioM/PreEntrega3-Maldonado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasIgnacioM/PreEntrega3-Maldonado/issues"
+  },
+  "homepage": "https://github.com/MatiasIgnacioM/PreEntrega3-Maldonado#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
