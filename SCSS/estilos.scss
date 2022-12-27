@@ -1,13 +1,40 @@
-//Variables
-$base-color: #ff1744;
-$base-gris: #f5f5f5;
+@import 'variables';
 
 * {
     font-family: 'Nunito', sans-serif;
-}
-
-body {
-    background-color: $base-gris!important;
+    h2 {
+        font-weight: 700!important;
+        font-size: 1.6rem!important;
+        letter-spacing: .1em;
+    }
+    body {
+        background-color: $base-gris!important;
+    }
+    .btn:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        
+    }
+    .card{
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+        margin-bottom: 20px;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+       }
+    }
+    ul {
+        list-style: none;
+        padding-left: 0!important;
+        
+    }
+    
+    ol {
+        padding-left: 0!important;
+    }
+    .form-check-input:checked {
+        background-color: $base-color!important;
+        border-color: $base-color!important;
+    }
 }
 
 .anuncio {
@@ -21,6 +48,7 @@ header  {
     }
     i {
         margin-top: 0.5rem;
+        margin-right: 10px;
     }
 }
 
@@ -32,63 +60,16 @@ header  {
     h1 {
         font-weight: 700!important;
     }
-    i {
-        margin-right: 10px;
+}
+
+.filter {
+    border-radius: 4px;
+}
+
+.breadcrumb {
+    a {
+        color: $base-color;
     }
-}
-
-h2 {
-    font-weight: 700!important;
-    font-size: 1.6rem!important;
-    letter-spacing: .1em;
-}
-
-.btn:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    
-}
-
-footer  {
-    .rrss {
-        text-align: right;
-        i {
-            font-size: 18px;
-            margin: 5px;
-            }
-        }
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: primary-color!important;
-    color: white!important;
-}
-
-.nav-pills .nav-link {
-    color: #141619!important;
-}
-
-.accordion-button:not(.collapsed) {
-    color: #141619!important;
-    background-color: #e9ecef!important;
-}
-
-ul {
-    list-style: none;
-    
-}
-
-ol, ul {
-    padding-left: 0!important;
-}
-
-
-
-.card{
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    &:hover{
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-   }
 }
 
 //Pagina mi cuenta (perfil)
@@ -110,6 +91,32 @@ ol, ul {
     box-shadow: 0px 8px 10px 0px rgba(82,82,82,0.18);
     margin-bottom: 15px;
     padding: 15px;
+}
+
+//Pills contacto
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: primary-color!important;
+    color: white!important;
+}
+
+.nav-pills .nav-link {
+    color: #141619!important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #141619!important;
+    background-color: #e9ecef!important;
+}
+
+//Estilos footer
+footer  {
+    .rrss {
+        text-align: right;
+        i {
+            font-size: 18px;
+            margin: 5px;
+            }
+        }
 }
 
 @media (max-width: 575.98px) {
