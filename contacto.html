@@ -29,7 +29,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
               <img src="https://i.ibb.co/7Qf5P08/logo-iso-1-33-33x.png" alt="logo-mono" height="24"></a>
 
             <!--Hamburguesa-->
@@ -49,7 +49,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="box.html">Boxes</a></li>
-                    <li><a class="dropdown-item" href="producto.html">Figuras</a></li>
+                    <li><a class="dropdown-item" href="figuras.html">Figuras</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -60,13 +60,24 @@
               <!--Search-->
               <form class="d-flex" role="search">
                 <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <a href="carrito.html">
-                  <i class="fa-solid fa-cart-shopping text-white"></i>
-                </a>
-                <a href="perfil.html">
-                  <i class="fa-solid fa-user text-white"></i>
-                </a>
               </form>
+
+              <!--Botones iconos-->
+              <div class="btn-icons">
+                <button class="btn btn-sm">
+                  <a href="perfil.html">
+                    <i class="fa-solid fa-user text-white"></i>
+                    Inicia sesión
+                  </a>
+                </button>
+                <button class="btn btn-sm">
+                  <a href="carrito.html">
+                    <i class="fa-solid fa-cart-shopping text-white"></i>
+                    (1)
+                  </a>
+                </button>
+                
+              </div>
             </div>
           </div>
         </nav>
@@ -82,7 +93,7 @@
           <div class="col">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contacto</li>
               </ol>
             </nav>
@@ -95,24 +106,6 @@
                 </div>
             </div>
             
-            <!--Pills
-            <div class="row mb-3">
-              <div class="col">
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Despacho</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Devoluciones y reembolsos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Garantías</a>
-                  </li>
-
-                </ul>
-              </div>
-            </div>-->
-                        
             <!--Tab faqs-->
             <div class="row">
               <div class="col">
@@ -156,28 +149,36 @@
                 </div>
               </div>
             </div>
-                       
 
-            </div>
             <!--Contacto-->
-            <div class="row p-3 mt-5">
-              <div class="col">
-                <h5>Contactanos</h5>
-                <p>contacto@monoschinos.cl</p>
-                <h5>Horarios de atencion</h5>
+            <div class="row p-3 mt-4">
+              <div class="col-12">
+                <h5>Contáctanos</h5>
+                <p>Llena el formulario de contacto o escríbenos a contacto@monoschinos.cl y te responderemos a la brevedad</p>
+                <h5>Horarios de atención</h5>
                 <p>08:30 a 18:00</p>
+              </div>
+
+              <div class="col-12 border p-4">
                 <form>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <div class="row mb-3">
+                    <div class="col">
+                      <label for="formName1" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="formName1">  
+                    </div>
+                    <div class="col">
+                      <label for="formEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="formEmail1" placeholder="name@example.com">  
+                    </div>
                   </div>
+            
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="formMessage1" class="form-label">¿En qué podemos ayudarte?</label>
+                    <textarea class="form-control" id="formMessage1" rows="3"></textarea>
+                    <br>
                     <button type="button" class="btn btn-danger">Enviar</button>
                   </div>
                 </form>
-                
               </div>
               
               

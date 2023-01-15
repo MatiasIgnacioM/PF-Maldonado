@@ -78,16 +78,28 @@
 }
 
 header  {
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: $base-color!important;
+    }
     p {
         margin-bottom: .5rem!important;
         margin-top: .5rem!important;
     }
     i {
-        margin-top: 0.5rem;
-        margin-right: 10px;
-        transition: all .3s;
-        &:hover {
-           color: $base-color!important;
+        font-size:18px;
+    }
+    .btn-icons {
+        .btn {
+            background-color: #38383b!important;
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff!important;
+            transition: all .3s;
+            &:hover {
+                color: $base-color!important;
+             }
         }
     }
 }
@@ -171,21 +183,17 @@ footer  {
 }
 
 @media (max-width: 575.98px) {
+    header  {
+        .btn-icons {
+            margin-top: 12px;
+        }
+    }
     .main-banner {
         background-size: cover;
         padding: 0;
     }
     h2 {
         font-size: 18px!important;
-    }
-    p {
-        font-size: 12px;
-    }
-    .card-title {
-        font-size: 15px;
-    }
-    .btn {
-        font-size: 12px!important;  
     }
     .menu-scroll {
         //Scroll horizontal en movil

@@ -29,7 +29,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
               <img src="https://i.ibb.co/7Qf5P08/logo-iso-1-33-33x.png" alt="logo-mono" height="24"></a>
 
             <!--Hamburguesa-->
@@ -49,7 +49,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="box.html">Boxes</a></li>
-                    <li><a class="dropdown-item" href="producto.html">Figuras</a></li>
+                    <li><a class="dropdown-item" href="figuras.html">Figuras</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -60,13 +60,24 @@
               <!--Search-->
               <form class="d-flex" role="search">
                 <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <a href="carrito.html">
-                  <i class="fa-solid fa-cart-shopping text-white"></i>
-                </a>
-                <a href="perfil.html">
-                  <i class="fa-solid fa-user text-white"></i>
-                </a>
               </form>
+
+              <!--Botones iconos-->
+              <div class="btn-icons">
+                <button class="btn btn-sm">
+                  <a href="perfil.html">
+                    <i class="fa-solid fa-user text-white"></i>
+                    Inicia sesión
+                  </a>
+                </button>
+                <button class="btn btn-sm">
+                  <a href="carrito.html">
+                    <i class="fa-solid fa-cart-shopping text-white"></i>
+                    (1)
+                  </a>
+                </button>
+                
+              </div>
             </div>
           </div>
         </nav>
@@ -83,7 +94,7 @@
             <div class="col">
               <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Carrito</li>
                 
                 </ol>
